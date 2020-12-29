@@ -1,0 +1,7 @@
+numpy==1.19.3
+pandas
+flask
+matplotlib
+gunicorn
+imblearn
+sklearn

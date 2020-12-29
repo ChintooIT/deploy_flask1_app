@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loan predictor Model</title>
+  </head> 
+  <body style="background-color:gray">
+    <div class="login">
+      <h1> Welcome to loan predictor</h1>
+      <form action="{{url_for('predict')}}" method="POST">
+          Dependents:
+          <input type="text" name="Dependents" placeholder="0 to 3"required> <br>
+          <br>
+          LoanAmount:
+          <input type="text" name="LoanAmount" placeholder="Range:17--700" required> <br>
+          <br>
+          Married:
+          <input type="text" name="Married" placeholder="0 or 1" required> <br>
+          <br>
+          Gender:
+          <input type="text" name="Gender" placeholder="0 or 1" required> <br>
+          <br>
+          Self_Employed:
+          <input type="text" name="Self_Employed"  placeholder="0 or 1" required> <br>
+          <br>
+          Loan_Amount_Term:
+          <input type="text" name="Loan_Amount_Term" placeholder="Range:12--480" required> <br>
+          <br>
+          Credit_History:
+          <input type="text" name="Credit_History" placeholder="0 or 1" required> <br>
+          <br>
+          Education:
+          <input type="text" name="Education" placeholder="0 or 1" required> <br>
+          <br>
+          Property_Area:
+          <input type="text" name="Property_Area" placeholder="0 or 1" required> <br>
+          <br>
+          ApplicantIncome:
+          <input type="text" name="ApplicantIncome" placeholder="Range:150--81000" required> <br>
+          <br>
+          CoapplicantIncome:
+          <input type="text" name="CoapplicantIncome" placeholder="Range:0--41667"required> <br>
+          <br>
+          <button type="submit" class="btn">Submit</button>
+      </form>
+      <br>
+      <br>
+      {{output}}
+    </div>
+    <p>Github:ChintooIT</p>
+  </body>
+</html>
